@@ -46,13 +46,13 @@ while running:
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
-        player.move(-5, 0)
+        player.move(-1, 0)
     if keys[pygame.K_RIGHT]:
-        player.move(5, 0)
+        player.move(1, 0)
     if keys[pygame.K_UP]:
-        player.move(0, -5)
+        player.move(0, -1)
     if keys[pygame.K_DOWN]:
-        player.move(0, 5)
+        player.move(0, 1)
 
     # Enemigo se mueve hacia el jugador
     enemy.move_towards(player)
